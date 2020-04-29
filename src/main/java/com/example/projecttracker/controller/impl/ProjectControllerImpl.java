@@ -50,7 +50,8 @@ public class ProjectControllerImpl implements ProjectController {
     public ResponseEntity<Project> getById(
             @PathVariable(value = "version") String version,
             @PathVariable int id) {
-        return null;
+
+        return new ResponseEntity<>(projectService.getProjectById(id), HttpStatus.OK);
     }
 
     /**
@@ -70,7 +71,7 @@ public class ProjectControllerImpl implements ProjectController {
      * @return project details
      */
     @Override
-    @GetMapping("/api/{version}/projects/{id}")
+    @PutMapping("/api/{version}/projects/{id}")
     public ResponseEntity<Project> updateById(
             @PathVariable(value = "version") String version,
             @PathVariable(value = "id") int id,
