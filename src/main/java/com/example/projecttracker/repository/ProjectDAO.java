@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
  * @since April 29, 2020
  */
 @Repository
-public class ProjectDAO {
+public interface ProjectDAO {
 }
