@@ -13,7 +13,7 @@ public class Project {
     private String description;
     private boolean isDeleted;
     private String createdBy;
-    private Date createdDate = new Date();
+    private Date createdDate;
     private String updatedBy;
     private Date updatedDate;
 
