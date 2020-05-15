@@ -36,7 +36,7 @@ public class CommentEntity implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int commentId;
 
-	@Column(length = 50, nullable = false)
+	@Column(nullable = false)
 	private String commentText;
 
 	@Column(nullable = false, columnDefinition = "boolean default false")
