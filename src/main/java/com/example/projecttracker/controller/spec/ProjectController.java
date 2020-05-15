@@ -1,10 +1,8 @@
 package com.example.projecttracker.controller.spec;
 
-import com.example.projecttracker.model.Project;
+import com.example.projecttracker.response.v1.Project;
 import com.example.projecttracker.request.v1.ProjectRequestData;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 

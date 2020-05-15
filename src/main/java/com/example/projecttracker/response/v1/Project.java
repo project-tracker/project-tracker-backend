@@ -1,4 +1,4 @@
-package com.example.projecttracker.model;
+package com.example.projecttracker.response.v1;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

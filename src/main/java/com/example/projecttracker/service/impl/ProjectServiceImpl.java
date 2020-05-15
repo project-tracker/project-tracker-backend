@@ -1,7 +1,7 @@
 package com.example.projecttracker.service.impl;
 
 import com.example.projecttracker.exception.ResourceNotFoundException;
-import com.example.projecttracker.model.Project;
+import com.example.projecttracker.response.v1.Project;
 import com.example.projecttracker.request.v1.ProjectRequestData;
 import com.example.projecttracker.service.spec.ProjectService;
 import org.springframework.stereotype.Service;

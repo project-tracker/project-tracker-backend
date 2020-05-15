@@ -1,8 +1,7 @@
 package com.example.projecttracker.mapper;
 
 import com.example.projecttracker.entity.ProjectEntity;
-import com.example.projecttracker.model.Project;
-import com.example.projecttracker.repository.ProjectDAO;
+import com.example.projecttracker.response.v1.Project;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 

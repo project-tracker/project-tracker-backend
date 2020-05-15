@@ -1,7 +1,7 @@
 package com.example.projecttracker.controller.impl;
 
 import com.example.projecttracker.controller.spec.ProjectController;
-import com.example.projecttracker.model.Project;
+import com.example.projecttracker.response.v1.Project;
 import com.example.projecttracker.request.v1.ProjectRequestData;
 import com.example.projecttracker.service.spec.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
