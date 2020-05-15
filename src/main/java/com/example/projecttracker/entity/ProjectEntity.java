@@ -6,5 +6,6 @@ package com.example.projecttracker.entity;
  * @author Ayan Bhuin
  * @since April 29, 2020
  */
+
 public class ProjectEntity {
 }
