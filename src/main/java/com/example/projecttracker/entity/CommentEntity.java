@@ -39,7 +39,7 @@ public class CommentEntity implements Serializable{
 	@Column(length = 50, nullable = false)
 	private String commentText;
 
-	@Column(nullable = false, columnDefinition = "bit default N")
+	@Column(nullable = false, columnDefinition = "boolean default false")
 	private boolean isDeleted;
 
 	@Column(nullable = false)
