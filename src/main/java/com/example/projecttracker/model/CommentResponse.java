@@ -3,25 +3,24 @@ package com.example.projecttracker.model;
 import java.util.Date;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * @author Biswajit Dutta
  * @since  May 14, 2020
  */
+
+@Getter
+@Setter
+@NoArgsConstructor
 public class CommentResponse {
 
-	@Getter
-	private short commentId;
-	@Getter
+	private int commentId;
 	private String commentText;
-	@Getter
 	private boolean isDeleted;
-	@Getter
 	private String createdBy;
-	@Getter
 	private Date createdDt;
-	@Getter
 	private String updatedBy;
-	@Getter
 	private Date updatedDt;
 }
