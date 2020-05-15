@@ -15,6 +15,7 @@ import org.hibernate.annotations.UpdateTimestamp;
  * @author Biswajit Dutta
  * @since  May 14, 2020
  */
+
 @Getter
 @Setter
 @NoArgsConstructor
