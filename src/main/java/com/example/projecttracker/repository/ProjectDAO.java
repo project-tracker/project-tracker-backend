@@ -1,5 +1,6 @@
 package com.example.projecttracker.repository;
 
+import com.example.projecttracker.entity.ProjectEntity;
 import org.springframework.stereotype.Repository;
 
 /**
