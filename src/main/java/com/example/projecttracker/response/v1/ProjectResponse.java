@@ -14,7 +14,7 @@ import java.util.Date;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Project {
+public class ProjectResponse {
     private int id;
     private String name;
     private String description;
