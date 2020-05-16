@@ -1,7 +1,7 @@
 package com.example.projecttracker.service.spec;
 
-import com.example.projecttracker.response.v1.Project;
 import com.example.projecttracker.request.v1.ProjectRequestData;
+import com.example.projecttracker.response.v1.ProjectResponseData;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,9 +12,9 @@ import java.util.List;
  */
 @Service
 public interface ProjectService {
-    List<Project> getAllProjects();
-    Project getProjectById(int id);
-    Project addProject();
-    Project updateById(ProjectRequestData data);
+    List<ProjectResponseData> getAllProjects();
+    ProjectResponseData getProjectById(int id);
+    ProjectResponseData addProject();
+    ProjectResponseData updateById(ProjectRequestData data);
     void deleteProjectById(int id);
 }

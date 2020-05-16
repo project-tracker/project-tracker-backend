@@ -1,7 +1,8 @@
 package com.example.projecttracker.mapper;
 
 import com.example.projecttracker.entity.ProjectEntity;
-import com.example.projecttracker.response.v1.ProjectResponse;
+import com.example.projecttracker.request.v1.ProjectRequestData;
+import com.example.projecttracker.response.v1.ProjectResponseData;
 import org.mapstruct.Mapper;
 
 /**
@@ -11,6 +12,6 @@ import org.mapstruct.Mapper;
 
 @Mapper
 public interface ProjectMapper {
-    ProjectEntity toEntity(ProjectResponse model);
-    ProjectResponse toResponse(ProjectEntity entity);
+    ProjectEntity toEntity(ProjectRequestData requestData);
+    ProjectResponseData toResponse(ProjectEntity entity);
 }

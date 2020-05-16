@@ -1,8 +1,8 @@
 package com.example.projecttracker.controller.impl;
 
 import com.example.projecttracker.controller.spec.ProjectController;
-import com.example.projecttracker.response.v1.Project;
 import com.example.projecttracker.request.v1.ProjectRequestData;
+import com.example.projecttracker.response.v1.ProjectResponseData;
 import com.example.projecttracker.service.spec.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,9 +30,9 @@ public class ProjectControllerImpl implements ProjectController {
      */
     @Override
     @GetMapping("/api/{version}/projects")
-    public ResponseEntity<List<Project>> getAll(
+    public ResponseEntity<List<ProjectResponseData>> getAll(
             @PathVariable(value = "version") String version) {
-        List<Project> projectList = projectService.getAllProjects();
+        List<ProjectResponseData> projectList = projectService.getAllProjects();
 
         if (projectList == null) {
             // Handle if project object is null
@@ -47,7 +47,7 @@ public class ProjectControllerImpl implements ProjectController {
      */
     @Override
     @GetMapping("/api/{version}/projects/{id}")
-    public ResponseEntity<Project> getById(
+    public ResponseEntity<ProjectResponseData> getById(
             @PathVariable(value = "version") String version,
             @PathVariable int id) {
 
@@ -60,7 +60,7 @@ public class ProjectControllerImpl implements ProjectController {
      */
     @Override
     @PostMapping("/api/{version}/projects")
-    public ResponseEntity<Project> add(
+    public ResponseEntity<ProjectResponseData> add(
             @PathVariable(value = "version") String version,
             @RequestBody ProjectRequestData data) {
         return null;
@@ -72,7 +72,7 @@ public class ProjectControllerImpl implements ProjectController {
      */
     @Override
     @PutMapping("/api/{version}/projects/{id}")
-    public ResponseEntity<Project> updateById(
+    public ResponseEntity<ProjectResponseData> updateById(
             @PathVariable(value = "version") String version,
             @PathVariable(value = "id") int id,
             @RequestBody ProjectRequestData data) {
